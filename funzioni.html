@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="js/main.js"></script>
+    <title>Funzioni</title>
+  </head>
+  <body>
+    <div id="header">
+      <h1>RACCOLTA FUNZIONI JS</h1>
+    </div>
+    <div id="navigation">
+      <ul>
+        <li><a href="index.html">JS</a></li>
+        <li><a class="active" href="funzioni.html">FUNZIONI</a></li>
+      </ul>
+    </div>
+    <div id="content">
+      <div id="listafunzioni">
+        <ul><li><a href="#fattoriale">Fattoriale</a></li></ul>
+        <ul><li><a href="#sommannum">Somma n numeri primi</a></li></ul>
+        <ul><li><a href="#quadrato">  Quadrato</a></li></ul>
+      </div>
+      <div id="inputDatiDiv">
+        <input type="text" class="inputDati" id="inputText">
+        <input type="number" class="inputDati" id="inputNumber">
+      </div>
+      <div id="fattoriale" class="listaFunzioni">
+        <p>Inserire un num per calcolare il fattoriale e click sul bottone</p>
+        <button type="button" class="btnFunzioni" id="btnFattoriale" onclick="calcolaFattorialeIncrementa()">Calcola Fattoriale</button>
+        <p id="risFattoriale" class="risultatofFunzioni"></p>
+      </div>
+      <div id="sommannum" class="listaFunzioni">
+        <p>Inserire un num per calcolare la somma dei numeri primi e click sul bottone</p>
+        <button type="button" class="btnFunzioni" id="btnSommaNum" onclick="sommaNNumPrimi()">Calcola Somma Num Primi</button>
+        <p id="risSommaNum" class="risultatoFunzioni"></p>
+      </div>
+      <div id="quadrato" class="listaFunzioni">
+        <p>Inserire un num per calcolare il quadrato e click sul bottone</p>
+        <button type="button" class="btnFunzioni" id="btnCalcoloQuadrato" onclick="calcolaQuadrato()">Calcola Quadrato</button>
+        <p id="risQuadrato" class="risultatoFunzioni"></p>
+      </div>
+    </div>
+    <div id="footer">
+      <h6>
+        WebMaster: Lorenzo Lupi <br />
+        A.S. 2023/2024
+      </h6>
+    </div>
+  </body>
+</html>
