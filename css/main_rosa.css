@@ -1,0 +1,100 @@
+*{
+    padding: 1%;
+    text-align: justify;
+    font-family: sans-serif;
+  }
+  a{
+    color: #000;
+    text-decoration: none;
+  }
+  #header {
+    margin: 0;
+    margin-bottom: 0.5em;
+    padding: 0.1em;
+    text-align: center;
+    background: #ffc0cb;
+    color: white;
+    font-size: 1.25em;
+  }
+  
+  #navigation {
+    background-color: #444;
+    margin-bottom: 0.8em;
+    padding: 0;
+  }
+  
+  #navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 43%;
+    overflow: hidden;
+  }
+  
+  #navigation li {
+    float: left;
+    padding: 0;
+  }
+  
+  #navigation li a {
+    display: block;
+    color: white;
+    font-size: 1.2em;
+    text-align: center;
+    padding: 1em;
+    text-decoration: none;
+  }
+  
+  #navigation li a:hover {
+    font-weight: bold;
+    background-color: #ffffffe5;
+    color: #ffc0cb;
+    padding: 1.12em;
+  }
+  #navigation .active {
+    background-color: #ffc0cb;
+    font-weight: 900;
+  }
+  
+  #content {
+    background-color: #ffc0cb;
+    color: #000;
+    font-size: 1.1em;
+    margin: 0;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    padding: 1%;
+  }
+  
+  #listaFunzioni ul {
+    list-style-type: none;
+    padding: 0.05%;
+  }
+  
+  .inputDati{
+    width: 47.43%;
+    margin: 2px;;
+    border: #444 1px solid;
+    height: 40px;
+  }
+  
+  .btnFunzioni{
+    background-color: #444; 
+    border: none;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .funzioniDiv{
+    margin: 4px;
+    border: #444 1px solid;
+  }
+  
+  #footer {
+    background-color: #ffc0cb;
+    margin-top: 0.5em;
+    text-align: center;
+  }
+  #footer h6{
+    text-align: center;
+  }

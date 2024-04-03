@@ -1,3 +1,18 @@
+function cambioColore(colore){
+    var cssLink = document.getElementById("css-file");
+    var nuovoCSS;
+
+    if(colore=="default"){
+        nuovoCSS="/css/main.css";
+    }else if(colore=="rosa"){
+        nuovoCSS="/css/main_rosa.css";
+    }else(
+        nuovoCSS="/css/main_verde.css"
+    )
+    
+    cssLink.href= nuovoCSS;
+}
+
 function calcolaFattorialeIncrementa() {
     var n = parseInt(document.getElementById("inputNumber").value);
     var risultato = 1;
