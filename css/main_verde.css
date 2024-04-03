@@ -57,7 +57,7 @@
   }
   
   #content {
-    background-color: #008f39;
+    background-color: #008f3980;
     color: #000;
     font-size: 1.1em;
     margin: 0;
@@ -90,6 +90,10 @@
     border: #444 1px solid;
   }
   
+  #btncss{
+    text-align: center;
+  }
+
   #footer {
     background-color: #008f39;
     margin-top: 0.5em;

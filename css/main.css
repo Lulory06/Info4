@@ -90,6 +90,10 @@ a{
   border: #444 1px solid;
 }
 
+#btncss{
+  text-align: center;
+}
+
 #footer {
   background-color: #00d9ff80;
   margin-top: 0.5em;
