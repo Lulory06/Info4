@@ -69,3 +69,31 @@ function inserisciNumArray(){
     document.getElementById("risInsArray").textContent = "Il num " + n + " è stato inserito nella poszione " + posizioneArray;
     posizioneArray++;
 }
+
+function trovaPosArray(){
+    var n = parseInt(document.getElementById("inputNumber").value);
+    var ris = 0;
+    ris = arrayNum[n];
+
+    if (arrayNum[n] == undefined) {
+        document.getElementById("risTrovaArray").textContent = "Nella posizione " + n + " non è stato inserito nessun numero ";
+        
+    } else {
+        document.getElementById("risTrovaArray").textContent = "Nella posizione " + n + " c'è il num " + ris;
+    }
+    
+}
+
+function calcolaArray(){
+    var op = 0
+    var ris = 1;
+    if (posizioneArray >= 1) {
+        for (i = 0; i <= posizioneArray; i + 2 ){
+            op = arrayNum[i] * arrayNum[i+1];
+        }
+        ris = ris + op;
+        document.getElementById("risCalcArray").textContent = ris;
+    } else {
+        document.getElementById("risCalcArray").textContent = "non ci sono abbastanza posizioni";
+    }
+}
