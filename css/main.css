@@ -1,6 +1,5 @@
 *{
   padding: 1%;
-  text-align: justify;
   font-family: sans-serif;
 }
 a{
@@ -24,6 +23,7 @@ a{
 }
 
 #navigation ul {
+  text-align: center;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -57,6 +57,7 @@ a{
 }
 
 #content {
+  text-align: center;
   background-color: #00d9ff20;
   color: #000;
   font-size: 1.1em;

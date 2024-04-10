@@ -1,6 +1,5 @@
 *{
     padding: 1%;
-    text-align: justify;
     font-family: sans-serif;
   }
   a{
@@ -64,6 +63,7 @@
     margin-top: 0.5em;
     margin-bottom: 0.5em;
     padding: 1%;
+    text-align: center;
   }
   
   #listaFunzioni ul {

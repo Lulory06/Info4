@@ -1,3 +1,6 @@
+const arrayNum = [];
+var posizioneArray = 0;
+
 function cambioColore(colore){
     var cssLink = document.getElementById("css-file");
     var nuovoCSS;
@@ -58,4 +61,11 @@ function calcolaSommaNNumDecrementa(){
         somma = somma + i; 
     }
     document.getElementById("risSommaNum").textContent = "La somma dei primi " + num + " numeri è " + somma;
+}
+
+function inserisciNumArray(){
+    var n = parseFloat(document.getElementById("inputNumber").value);
+    arrayNum[posizioneArray] = n;
+    document.getElementById("risInsArray").textContent = "Il num " + n + " è stato inserito nella poszione " + posizioneArray;
+    posizioneArray++;
 }

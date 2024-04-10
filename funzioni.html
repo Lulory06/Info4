@@ -12,7 +12,7 @@
       <h1>RACCOLTA FUNZIONI JS</h1>
     </div>
     <div id="navigation">
-      <ul>
+      <ul class="navbar">
         <li><a href="index.html">JS</a></li>
         <li><a class="active" href="funzioni.html">FUNZIONI</a></li>
       </ul>
@@ -45,13 +45,14 @@
         <p id="risQuadrato" class="risultatoFunzioni"></p>
       </div>
       <div id="array" class="listaFunzioni">
-        <p>Inserire un numero per l'array</p>
-        <input type="number" class="inputDati" id="inputNumberArray">
+        <p>Clicca il bottone per i nserire un numero nell'array</p>
+        <button type="button" class="btnFunzioni" id="btnInserisciArray" onclick="inserisciNumArray()">Inserisci Array</button>
+        <p id="risInsArray" class="risultatoFunzioni"></p>
       </div>
       <div id="trovaArray" class="listaFunzioni">
         <p>Clicca il bottone per trovare l'array</p>
-        <button type="button" class="btnFunzioni" id="btnTrovaArray">Trova Array</button>
-        <p id="risArray" class="risultatoArray"></p>
+        <button type="button" class="btnFunzioni" id="btnTrovaArray" onclick="trovaPosArray()">Trova Array</button>
+        <p id="risTrovaArray" class="risultatoFunzioni"></p>
       </div>
     </div>
     <div id="footer">
