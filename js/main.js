@@ -85,15 +85,41 @@ function trovaPosArray(){
 }
 
 function calcolaArray(){
-    var op = 0
-    var ris = 1;
-    if (posizioneArray >= 1) {
-        for (i = 0; i <= posizioneArray; i + 2 ){
-            op = arrayNum[i] * arrayNum[i+1];
+    if(posizioneArray<1){
+        document.getElementById("risCalcArray").textContent = "Insufficienti numeri nell'array";
+    }else{
+        let somma = 0;
+
+        for (let i=0;i<(posizioneArray-1);i++){
+            somma += arrayNum[i] * arrayNum[i+1];
+            console.log("Somma: "+ somma);
         }
-        ris = ris + op;
-        document.getElementById("risCalcArray").textContent = ris;
-    } else {
-        document.getElementById("risCalcArray").textContent = "non ci sono abbastanza posizioni";
+
+        document.getElementById("risCalcArray").textContent = "Somma dei prodotti dell'array: "+somma;
     }
 }
+
+function ResetArray() {
+    arrayNum.length = 0;
+    posizioneArray = 0;
+}
+
+function moltiplicaEstremiESomma() {
+    risultato = 0;
+    var primoElemento = array[0];
+    var ultimoElemento = array[posizioneArray];
+
+    var prodottoEstremi = primoElemento * ultimoElemento;
+
+    var numeroMancante = 0;
+    for (var i = primoElemento + 1; i < ultimoElemento; i++) {
+        if (!array.includes(i)) {
+            numeroMancante = i;
+        }
+    }
+
+    var risultato = prodottoEstremi + numeroMancante;
+
+    document.getElementById("risMoltSommaEstArray").textContent = risultato;
+}
+
