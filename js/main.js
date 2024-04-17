@@ -104,22 +104,17 @@ function ResetArray() {
     posizioneArray = 0;
 }
 
-function moltiplicaEstremiESomma() {
-    risultato = 0;
-    var primoElemento = array[0];
-    var ultimoElemento = array[posizioneArray];
+function MoltiplicaEstremi(){
+    risultato1 = 0;
+    risultato2 = 0;
+    var i= arrayNum[0];
+    var j= arrayNum[posizioneArray];
 
-    var prodottoEstremi = primoElemento * ultimoElemento;
-
-    var numeroMancante = 0;
-    for (var i = primoElemento + 1; i < ultimoElemento; i++) {
-        if (!array.includes(i)) {
-            numeroMancante = i;
-        }
+    if(posizioneArray==0){
+        arrayNum[0]*arrayNum[posizioneArray]==risultato1;
+        i++;
+        j--;
+        document.getElementById("risSommaPerEstremi").textContent = risultato3;
     }
-
-    var risultato = prodottoEstremi + numeroMancante;
-
-    document.getElementById("risMoltSommaEstArray").textContent = risultato;
 }
 
